@@ -9,23 +9,34 @@
 <body>
 
     <?php
-
     $titulo_form = "Olá,";
     $texto_cadastro = "Não tem conta?";
-    $url_cadastro = "Cadastre-se!";
-
-     echo '<form method="POST action=" ">';
-     echo '<fieldset>';
-     echo '<h2> '. $titulo_form .' </h2>';
-     echo 'Username: <input type="text" name="Usuário" required> <br> <br>';
-     echo 'Password: <input type="password" name="Senha" required> <br> <br>';
-     echo '<button type="submit"> Entrar </button>';
-     echo '<h3> '. $texto_cadastro .'</h3>';
-     echo '<a href " "> '. $url_cadastro.' </a>';
-     echo '</fieldset>';
-     echo '</form>';
-
+    $url_cadastro = "Cadastre-se!"; 
+    $link_cadastro = "cadastro.php";
     ?>
+
+    <form method="POST" action="../Siteworld/world.php">
+        <fieldset>
+            <h2><?= $titulo_form ?></h2>
+            
+            <div class="form-group">
+                <label for="usuario">Username:</label>
+                <input type="text" id="usuario" name="Usuário" required>
+            </div> <br>
+            
+            <div class="form-group">
+                <label for="senha">Password:</label>
+                <input type="password" id="senha" name="Senha" required>
+            </div> <br>
+            
+            <button type="submit">Entrar</button>
+            
+            <div class="cadastro-link">
+                <h3><?= $texto_cadastro ?></h3>
+                <a href="<?= $link_cadastro ?>"><?= $url_cadastro ?></a>
+            </div>
+        </fieldset>
+    </form>
 
 </body>
 </html>
