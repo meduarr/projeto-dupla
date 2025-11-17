@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>\Projeto</title>
-    <link rel="stylesheet" href="css/projet.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/projet.css">
 </head>
 <body>
 
@@ -12,7 +12,7 @@
 
     $titulo_form = "Olá,";
     $texto_cadastro = "Não tem conta?";
-    $url_cadastro = "cadastro.php";
+    $url_cadastro = "Cadastre-se!";
 
      echo '<form method="POST action=" ">';
      echo '<fieldset>';
@@ -23,7 +23,7 @@
      echo '<h3> '. $texto_cadastro .'</h3>';
      echo '<a href " "> '. $url_cadastro.' </a>';
      echo '</fieldset>';
-    echo '</form>';
+     echo '</form>';
 
     ?>
 
