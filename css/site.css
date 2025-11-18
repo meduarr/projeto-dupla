@@ -1,0 +1,43 @@
+.titulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+body {
+  background: url("../img/Captura\ de\ tela_6-11-2025_122019_www.bing.com.jpeg")
+    no-repeat center fixed;
+  background-size: cover;
+}
+
+.imagem_site {
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 40px;
+  background: white;
+  width: 150px;
+  background: rgba(255, 255, 255, 0.2); /* ou white */
+  transition: transform 0.3s ease; /* Só a imagem anima */
+  cursor: pointer; /* Mostra que é clicável */
+}
+
+.container_produtos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.container_produto {
+  display: flex;
+  flex-wrap: wrap; /* os itens vão para a linha de baixo se faltar espaço */
+  gap: 20px; /* espaço entre os itens */
+  justify-content: center;
+  margin-top: 40px;
+}
+.imagem_site:hover {
+  transform: scale(1.2); /* ⬅️ CRESCE quando mouse passa EM CIMA da imagem */
+}

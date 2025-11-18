@@ -9,7 +9,8 @@
 <body>
 
     <?php
-    $titulo_form = "Olá,";
+    $titulo_form = "World de Variedades!";
+    $titulo_dois = "Faça seu login";
     $texto_cadastro = "Não tem conta?";
     $url_cadastro = "Cadastre-se!"; 
     $link_cadastro = "cadastro.php";
@@ -17,7 +18,8 @@
 
     <form method="POST" action="../Siteworld/world.php">
         <fieldset>
-            <h2><?= $titulo_form ?></h2>
+            <h2 style="color: black;"><?= $titulo_form ?></h2>
+            <h1 style="color: black;"> <?= $titulo_dois ?></h1>
             
             <div class="form-group">
                 <label for="usuario">Username:</label>
@@ -32,7 +34,7 @@
             <button type="submit">Entrar</button>
             
             <div class="cadastro-link">
-                <h3><?= $texto_cadastro ?></h3>
+                <h3 style="color: white;"><?= $texto_cadastro ?></h3>
                 <a href="<?= $link_cadastro ?>"><?= $url_cadastro ?></a>
             </div>
         </fieldset>
