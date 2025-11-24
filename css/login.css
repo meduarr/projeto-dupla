@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Hubballi&display=swap");
+
+
+label {
+    margin-right: 150px;
+}
+
+@keyframes piscar {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.underline {
+    animation-name: piscar;
+    animation-duration: 0.5s;            /* tempo de cada ciclo */
+    animation-iteration-count: infinite; /* repetir sempre */
+    animation-direction: alternate;      /* vai de 0 → 1 e volta 1 → 0 */
+    animation-timing-function: linear;   /* piscar constante */
+}
+#forgot {
+    margin-right: 100px;
+}
+
+.error{
+    color: red;
+    margin: 0;
+    padding: 15px 0px;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 35px;
+    padding-top: 170px;
+
+    color: white;
+    font-family: "Hubballi";
+    font-weight: 900;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input{
+    padding: 10px 40px 10px 10px;
+    margin-top: 5px;
+    border: none;
+    background-color:#101111;
+    border-radius: 2px;
+    color: white;
+    outline: none;
+}
+
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+    display: none;
+}
+
+.password {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#botton_senha {
+    position: absolute;
+    background: none;
+    margin-left: 180px;
+    margin-top: 7px;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    filter: invert();
+}
+
+#button {
+    padding: 12px 90px;
+    cursor: pointer;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    background-color: #5858ff;
+    transition: 0.3s;
+}
+
+#button:hover {
+    background-color: rgb(108, 108, 255);
+}
+
+#cadastro{
+    color: rgb(88, 88, 255);
+    text-decoration: none;
+}
+
+#cadastro:hover {
+    text-decoration: underline;
+}

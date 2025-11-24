@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Hubballi&display=swap");
+
+body{
+    margin: 0;
+}
+
+.shop{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family: "Hubballi";
+    font-weight: 900;
+}
+
+.produtos{
+    display: flex;
+    gap: 40px;
+}
+
+.produto{
+    padding: 10px;
+    border: 1px solid #bebebe;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.produto:hover{
+    transform:scale(1.1);
+}
+
+#imgproduto{
+    border-radius: 5px;
+}
+
+#buttonproduto{
+    padding: 12px 90px;
+    cursor: pointer;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    background-color: #5858ff;
+    transition: 0.3s;
+}
+
+.preco{
+    gap: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Hubballi";
+}
+
+#precoatual{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#precopassado{
+    text-decoration: line-through;
+}

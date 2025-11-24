@@ -1,0 +1,46 @@
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.slider img {
+    border-radius: 10px;
+}
+
+.slider button {
+    position: absolute;
+    cursor: pointer;
+    background: none;
+    padding: 223.5px 25px;
+    border: none;
+    transition: background 0.3s;
+}
+
+.slider button:hover{
+    background: rgba(0, 0, 0, 0.534);
+}
+
+#left-button{
+    margin-right: 700px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#left-button img{
+    transform: scaleX(-1);
+    filter: invert();
+}
+
+
+#right-button{
+    margin-left: 700px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+
+#right-button img{
+    filter: invert();
+}
